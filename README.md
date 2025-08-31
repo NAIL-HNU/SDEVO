@@ -5,7 +5,7 @@ This repository contains the code implementation for our paper titled "Deep Visu
 
 ### Abstract
 
-We present a deep learning-based method for visual odometry using stereo event cameras. Our approach significantly improves the accuracy and robustness of motion estimation in high-speed and low-light environments by leveraging the asynchronous nature of event data.
+We present a deep learning-based method for visual odometry using stereo event cameras. The proposed system is built on top of DEVO, a monocular event-only VO system that leverages a learned patch selector and a pooled multinomial sampling for tracking sparse event patches.
 
 ### Comparing with us
 
