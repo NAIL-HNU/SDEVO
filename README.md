@@ -1,7 +1,16 @@
 ## Deep Visual Odometry for Stereo Event Cameras
+
+### **Video**
+
+[![IMAGE ALT TEXT HERE](video_pic.png)](https://youtu.be/7UykRsmk3Zc) &nbsp;&nbsp;
+
+### **Related Publications**
+
+The paper is awaiting formal publication and will be made available once published in RAL.
+
 ### Coming Soon
 
-This repository contains the code implementation for our paper titled "Deep Visual Odometry for Stereo Event Cameras", soon to be released.
+This repository contains the code implementation for our paper titled "Deep Visual Odometry for Stereo Event Cameras", which is expected to be released after IROS 2025.
 
 ### Abstract
 
