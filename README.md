@@ -25,3 +25,10 @@ We encourage comparative evaluations before the release of the full project. If 
 For questions or inquiries, please feel free to contact us at bell@hnu.edu.cn.
 
 We appreciate your interest in our work!
+
+### Acknowledgments
+
+We thank the authors of the following repositories for publicly releasing their work:
+
+- [DPVO](https://github.com/princeton-vl/DPVO)
+- [DEVO](https://github.com/tum-vision/DEVO)
