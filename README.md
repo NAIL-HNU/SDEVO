@@ -4,9 +4,9 @@
 
 [![IMAGE ALT TEXT HERE](video_pic.png)](https://youtu.be/7UykRsmk3Zc) &nbsp;&nbsp;
 
-### **Related Publications**
+### **Related Publication**
 
-**[Deep Visual Odometry for Stereo Event Cameras](https://arxiv.org/abs/2509.08235)**, *Junkai Niu, Sheng Zhong, Yi Zhou*, IEEE Robotics and Automation Letters (RA-L), 2025. [PDF](https://arxiv.org/abs/2509.08235), [Video](https://youtu.be/7UykRsmk3Zc).
+[1] **[Deep Visual Odometry for Stereo Event Cameras](https://arxiv.org/abs/2509.08235)**, *Junkai Niu, Sheng Zhong, Yi Zhou*, IEEE Robotics and Automation Letters (RA-L), 2025. [PDF](https://arxiv.org/abs/2509.08235), [Video](https://youtu.be/7UykRsmk3Zc).
 
 ### Coming Soon
 
