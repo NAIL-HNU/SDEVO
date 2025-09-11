@@ -33,3 +33,4 @@ We thank the authors of the following repositories for publicly releasing their 
 - [DPVO](https://github.com/princeton-vl/DPVO)
 - [DEVO](https://github.com/tum-vision/DEVO)
 - [IROS 2025 EvSLAM Challenge](https://nail-hnu.github.io/EvSLAM/)
+- [CVPRW 2025 SLAM Challenge](https://m3ed.io/slam_challenge/)
