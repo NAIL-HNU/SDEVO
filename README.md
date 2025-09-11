@@ -6,7 +6,7 @@
 
 ### **Related Publications**
 
-The paper is awaiting formal publication and will be made available once published in RAL.
+**[Deep Visual Odometry for Stereo Event Cameras](https://arxiv.org/abs/2509.08235)**, *Junkai Niu, Sheng Zhong, Yi Zhou*, IEEE Robotics and Automation Letters (RA-L), 2025. [PDF](https://arxiv.org/abs/2509.08235), [Video](https://youtu.be/7UykRsmk3Zc).
 
 ### Coming Soon
 
@@ -32,3 +32,4 @@ We thank the authors of the following repositories for publicly releasing their 
 
 - [DPVO](https://github.com/princeton-vl/DPVO)
 - [DEVO](https://github.com/tum-vision/DEVO)
+- [IROS 2025 EvSLAM Challenge](https://nail-hnu.github.io/EvSLAM/)
