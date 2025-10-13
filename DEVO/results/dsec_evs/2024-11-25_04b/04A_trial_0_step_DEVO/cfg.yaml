@@ -1,0 +1,23 @@
+!!python/object/new:yacs.config.CfgNode
+dictitems:
+  BUFFER_SIZE: 4096
+  GRADIENT_BIAS: false
+  KEYFRAME_INDEX: 4
+  KEYFRAME_THRESH: 15.0
+  MIXED_PRECISION: true
+  MOTION_DAMPING: 0.5
+  MOTION_MODEL: DAMPED_LINEAR
+  NORM: std
+  OPTIMIZATION_WINDOW: 10
+  PATCHES_PER_FRAME: 96
+  PATCH_LIFETIME: 10
+  PATCH_SELECTOR: scorer
+  REMOVAL_WINDOW: 10
+  SCORER_EVAL_MODE: multi
+  SCORER_EVAL_USE_GRID: true
+  save_traj_dir: /home/njk/ros/SDEVO_no_speedup/src/sdevo/DEVO/output/poses_tum_format.txt
+state:
+  __deprecated_keys__: !!set {}
+  __immutable__: false
+  __new_allowed__: false
+  __renamed_keys__: {}

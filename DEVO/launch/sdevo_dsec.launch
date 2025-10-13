@@ -1,0 +1,8 @@
+<launch>
+  <param name="calibInfoDirStr" value="$(find image_representation)/calib/dsec/zurich_city_04_a"/>
+  <param name="configFileStr" value="$(find sdevo)/config/evaluation/eval_dsec.yaml"/>
+  <param name="weightsFileStr" value="$(find sdevo)/DEVO.pth"/>
+  <param name="sdevoDirStr" value="$(find sdevo)"/>
+
+  <node name="sdevo" pkg="sdevo" type="sdevo.py" output="screen"/>
+</launch>

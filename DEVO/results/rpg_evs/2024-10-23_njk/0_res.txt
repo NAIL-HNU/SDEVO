@@ -1,0 +1,3 @@
+
+Scene  ATE[cm]  R_rmse[deg]  MPE[%/m]  \\
+Bin    0.853    1.063        0.087     \\

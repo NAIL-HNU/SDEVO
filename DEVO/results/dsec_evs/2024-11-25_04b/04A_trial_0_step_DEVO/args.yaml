@@ -1,0 +1,14 @@
+config: config/evaluation/eval_dsec.yaml
+datapath: /media/njk/njk/data_for_devo/processed/
+expname: 04b
+plot: true
+return_figs: false
+save_trajectory: true
+side: left
+stride: 1
+timing: false
+trials: 1
+val_split: splits/dsec/dsec_val.txt
+viz: false
+viz_flow: false
+weights: DEVO.pth

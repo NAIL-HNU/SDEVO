@@ -1,0 +1,7 @@
+use_stereo_cam: True
+representation_mode: 0
+    # Voxel      // 0
+duration_ms: 50
+use_sim_time: True
+is_left: False
+generation_rate_hz: 10

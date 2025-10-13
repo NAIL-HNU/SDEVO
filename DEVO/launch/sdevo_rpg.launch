@@ -1,0 +1,8 @@
+<launch>
+  <param name="calibInfoDirStr" value="$(find image_representation)/calib/rpg"/>
+  <param name="configFileStr" value="$(find sdevo)/config/evaluation/eval_rpg.yaml"/>
+  <param name="weightsFileStr" value="$(find sdevo)/DEVO.pth"/>
+  <param name="sdevoDirStr" value="$(find sdevo)"/>
+
+  <node name="sdevo" pkg="sdevo" type="sdevo.py" output="screen"/>
+</launch>

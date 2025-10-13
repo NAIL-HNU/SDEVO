@@ -1,0 +1,14 @@
+config: config/eval_rpg.yaml
+datapath: /media/njk/njk/data_for_devo/rpg
+expname: bin
+plot: true
+return_figs: false
+save_trajectory: true
+side: left
+stride: 1
+timing: false
+trials: 1
+val_split: splits/rpg/rpg_val.txt
+viz: false
+viz_flow: false
+weights: DEVO.pth

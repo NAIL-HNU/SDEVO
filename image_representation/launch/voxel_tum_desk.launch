@@ -1,0 +1,32 @@
+<launch>
+  <rosparam param="/use_sim_time">true</rosparam>
+  <rosparam param="/isTUMDataset">true</rosparam>
+  <!-- Calibration folder -->
+  <arg name="calibInfoDirStr" default="$(find image_representation)/calib/tum_desk"/>
+
+  <node name="image_representation_left" pkg="image_representation" type="image_representation" output="screen" >
+    <remap from="events" to="/davis/left/events" />
+    <remap from="voxel_grid" to="/davis/left/voxel_grid" />
+
+    <rosparam command="load" file="$(find image_representation)/cfg/image_representation_voxel_l.yaml" />
+    <rosparam param="calibInfoDir" subst_value="true">$(arg calibInfoDirStr)</rosparam>
+  </node>
+
+  <node name="image_representation_right" pkg="image_representation" type="image_representation" output="screen" >
+    <remap from="events" to="/davis/right/events" />
+    <remap from="voxel_grid" to="/davis/right/voxel_grid" />
+    
+    <rosparam command="load" file="$(find image_representation)/cfg/image_representation_voxel_r.yaml" />
+    <rosparam param="calibInfoDir" subst_value="true">$(arg calibInfoDirStr)</rosparam>
+  </node>
+
+  <node name="global_timer" pkg="rostopic" type="rostopic" args="pub -r 2 /sync std_msgs/Time 'now' ">
+		<rosparam param="/use_sim_time">true</rosparam>
+  </node>
+
+  <param name="calibInfoDirStr" value="$(arg calibInfoDirStr)"/>
+  <param name="configFileStr" value="$(find sdevo)/config/evaluation/eval_tumvie.yaml"/>
+  <param name="weightsFileStr" value="$(find sdevo)/DEVO.pth"/>
+  <param name="sdevoDirStr" value="$(find sdevo)"/>
+  <node name="sdevo" pkg="sdevo" type="sdevo.py" output="screen"/>
+</launch>

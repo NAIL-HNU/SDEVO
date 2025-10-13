@@ -1,0 +1,22 @@
+!!python/object/new:yacs.config.CfgNode
+dictitems:
+  BUFFER_SIZE: 4096
+  GRADIENT_BIAS: false
+  KEYFRAME_INDEX: 4
+  KEYFRAME_THRESH: 5.0
+  MIXED_PRECISION: true
+  MOTION_DAMPING: 0.5
+  MOTION_MODEL: DAMPED_LINEAR
+  NORM: std
+  OPTIMIZATION_WINDOW: 10
+  PATCHES_PER_FRAME: 96
+  PATCH_LIFETIME: 13
+  PATCH_SELECTOR: scorer
+  REMOVAL_WINDOW: 22
+  SCORER_EVAL_MODE: multi
+  SCORER_EVAL_USE_GRID: true
+state:
+  __deprecated_keys__: !!set {}
+  __immutable__: false
+  __new_allowed__: false
+  __renamed_keys__: {}
