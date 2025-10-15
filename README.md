@@ -34,18 +34,18 @@ catkin_make
 
 #### 1.2 Python node
 
-We refer to [DEVO](https://github.com/tum-vision/DEVO) and use Anaconda to manage the Python environment.
+We refer to [DEVO](https://github.com/tum-vision/DEVO) repository and use Anaconda to manage the Python environment.
 
 First, create and activate the Anaconda environment
 
-```
+```bash
 conda env create -f environment.yml
 conda activate sdevo
 ```
 
 Then, install the package
 
-```
+```bash
 cd ~/DEVO
 pip install .
 ```
@@ -58,7 +58,7 @@ Since the rosbag with event data is not provided in the datasets, we repackage t
 
 After you get the repackaged data, you can try running it using the following command.
 
-```
+```bash
 cd ~\catkin_ws
 source devel/setup.bash
 conda activate sdevo
@@ -67,29 +67,45 @@ roslaunch image_representation voxel_xxx.launch
 
 This will launch two *image_representation nodes* (for left and right event cameras, respectively), the sdevo node simultaneously. Then play the input (already downloaded) bag file by running
 
-```
+```bash
 rosbag play xxx.bag --clock
 ```
 
 The trajectories will be saved in the path in `/output/poses_interpolated.txt`.
 
+If your hardware cannot support real-time execution of our system, you may modify the rosbag playback rate. However, you must correspondingly adjust the trigger frequency of the periodic signal in the launch file to maintain synchronization:
 
 
-### Abstract
+```xml
+<node name="global_timer" pkg="rostopic" type="rostopic" args="pub -s -r 2 /sync std_msgs/Time 'now' ">
+```
+
+The frequency of the `global_timer` (in Hz) divided by the rosbag playback rate must equal the voxel generation frequency (`generation_rate_hz`). This relationship maintains temporal consistency between data playback and system processing. 
+$$
+\frac{global\_timer\_frequency}{rosbag\_playback\_rate} = generation\_rate\_hz
+$$
+
+> *Implementation Notes:*
+>
+> 1. When decreasing playback rate (slower than real-time), proportionally decrease the `global_timer` frequency 
+> 2. When increasing playback rate (faster than real-time), proportionally increase the `global_timer` frequency 
+> 3. Always verify the resulting voxel generation rate matches system requirements
+
+### 3. Abstract
 
 We present a deep learning-based method for visual odometry using stereo event cameras. The proposed system is built on top of DEVO, a monocular event-only VO system that leverages a learned patch selector and a pooled multinomial sampling for tracking sparse event patches.
 
-### Comparing with us
+### 4. Comparing with us
 
 We encourage comparative evaluations before the release of the full project. If you require the original trajectory data for comparison, feel free to contact us.
 
-### Contact us
+### 5. Contact us
 
 For questions or inquiries, please feel free to contact us at bell@hnu.edu.cn.
 
 We appreciate your interest in our work!
 
-### Acknowledgments
+### 6. Acknowledgments
 
 We thank the authors of the following repositories for publicly releasing their work:
 
