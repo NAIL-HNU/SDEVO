@@ -81,9 +81,6 @@ If your hardware cannot support real-time execution of our system, you may modif
 ```
 
 The frequency of the `global_timer` (in Hz) divided by the rosbag playback rate must equal the voxel generation frequency (`generation_rate_hz`). This relationship maintains temporal consistency between data playback and system processing. 
-$$
-\frac{global\_timer\_frequency}{rosbag\_playback\_rate} = generation\_rate\_hz
-$$
 
 > *Implementation Notes:*
 >
