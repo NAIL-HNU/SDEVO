@@ -94,7 +94,7 @@ We present a deep learning-based method for visual odometry using stereo event c
 
 ### 4. Comparing with us
 
-We encourage comparative evaluations before the release of the full project. If you require the original trajectory data for comparison, feel free to contact us.
+If you require the original trajectory data for comparison, feel free to contact us.
 
 ### 5. Contact us
 
